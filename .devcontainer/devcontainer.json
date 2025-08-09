@@ -30,5 +30,12 @@
   "forwardPorts": [8080, 8888],
   "postCreateCommand": "rustc --version && cargo --version",
   
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+  ],
+  "remoteEnv": {
+    "GIT_CONFIG_GLOBAL": "/root/.gitconfig"
+  },
+  
   "remoteUser": "root"
 } 
