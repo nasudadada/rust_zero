@@ -27,7 +27,7 @@
     }
   },
 
-  "forwardPorts": [8080],
+  "forwardPorts": [8080, 8888],
   "postCreateCommand": "rustc --version && cargo --version",
   
   "remoteUser": "root"
